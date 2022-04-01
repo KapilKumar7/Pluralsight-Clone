@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flowPage</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+      body{
+          background-color: 
+#222222;
+      }
+    #container{
+        height: 600px;
+        width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        background-image: url(https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block/image-res.img.5745cfe0-5253-4076-8a40-6adee55d42fe.png);
+        margin-top: 150px;
+    }
+    .img1{
+        width: 100%;
+        height: 600px;
+    }
+    .div1{
+        width: 450px;
+        height: 400px;
+        /* border: 1px solid blue; */
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+    .h1{
+        color: white;
+        font-weight: bold;
+        font-size: 2.8em;
+    }
+    .para1{
+        color: white;
+        font-weight: bolder;
+        font-size: 1.5em;
+
+    }
+    .button1{
+        background-color: 
+#255ba7;
+color: white;
+font-size: 1em;
+font-weight: bolder;
+padding: 15px 25px 15px 25px;
+cursor: pointer;
+border: none;
+    }
+    .para2{
+        color: white;
+        display: inline-block;
+        margin: 0;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #container2{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(200px,1fr);
+        margin: auto;
+    }
+    .div2{
+        display: grid;
+        height: 400px;
+        width: 600px;
+        /* border: 1px solid blue;  */
+        margin-top: 120px;
+    }
+    .img2{
+        width: 100%;
+    }
+    .p1_div2{
+        color: #255ba7;
+        font-weight: bold;
+        margin: 0px 0px 0px 0px; 
+
+padding: 0px 0px 0px 0px;
+    }
+
+    .h1_div2{
+        color: white;
+        margin: -90px 0px 0px 0px; 
+
+padding: 0px 0px 0px 0px;
+    }
+
+    .ul{
+    color: white;
+    line-height: 30px;
+    margin-top: -130px;
+  
+    }
+    .img3{
+        width: 80%;
+        margin-left: 120px;
+        
+
+    }
+    #container3{
+        background-color: black;
+        width: 100%;
+        height: 700px;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+    }
+    .div3{
+        height: 212px;
+        width: 351px;
+        /* border: 1px solid red; */
+
+    }
+    .img_div3{
+        width: 100%;
+    }
+
+    .p1_div3{
+        color: #255ba7;
+        font-weight: bolder;
+    }
+
+    .h1_div3{
+        color: white;
+        margin-top: 50px;
+        font-size: 2.8em;
+    }
+
+    .p2_div3{
+        color: white;
+        font-size: 20px;
+    }
+
+    .p3_div3{
+        color: white;
+        font-weight: bolder;
+        font-size: 21px;
+        float: left;
+        margin-left: 30px;
+    }
+    .p4_div3{
+        color: white;
+        font-weight: bolder;
+        font-size: 21px;
+        float: right;
+        margin-right: 110px;
+    }
+
+    .div4{
+        height: 400px;
+        width: 600px;
+        /* border: 1px solid red; */
+
+    }
+
+    .div5{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(200px,1fr);
+        margin: auto;
+    }
+    .div6{
+        display: grid;
+        height: 400px;
+        width: 600px;
+        /* border: 1px solid blue;  */
+        margin-top: 60px;
+    }
+    .h1_2{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 3em;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .h1_div6{
+        color: white;
+        margin: 30px 0px 0px 140px ;
+        font-size: 2.5em;
+    }
+    
+    .p1_div6{
+        color: white;
+        margin: auto;
+        margin-top: -150px;
+        
+    }
+
+    #container5{
+        width: 100%;
+        height: 900px;
+        background-image: url(https://www.pluralsight.com/content/experience-fragments/pluralsight/trust_badges/flow-industry-standard/flow-industry-standard/jcr:content/root/generic_block_119848/image-res.img.f05b58c7-ccbb-40fd-9da1-156e259bc607.jpg);
+        margin-top: 150px;
+        background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-size: cover;
+    }
+    .h2{
+        padding-top: 100px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(0, 157, 255);
+    }
+    .h1_c5{
+        text-align: center;
+        font-size: 3em;
+        color: white;
+    }
+
+    .div7{
+        display: grid;
+        width: 70%;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(200px, 1fr);
+        /* border: 1px solid #ce0572; */
+        height: 450px;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .div8{
+        display: grid;
+        height: 100px;
+        width: 250px;
+        /* border:1px solid #255ba7; */
+        margin: auto;
+        margin-top: -80px;
+    }
+    .img_div8{
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 200px;
+    }
+    .btn_contain5{
+      color: white;
+      border: none;
+      background-color: #255ba7;
+      display: block;
+      margin: auto;
+      font-size: 15px;
+      padding: 15px 30px;
+      margin-top: -30px;
+      
+    }
+  </style>
+</head>
+<body>
+    <div id="container">
+        <div class="div1"><img src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block/parsys/columns/column-parsys-2/image/image-res.img.56b01958-2194-4fb4-b149-7a2074283703.png">
+           <br>
+            <h1 class="h1">The Software Delivery Intelligence Platform</h1>
+            <p class="para1">Optimize software delivery with actionable
+                insights from your code repos and agile tools. </p>
+                <span><button class="button1">TAKE A TOUR</button></span>  <span><p class="para2">Contact Sales
+                    <span><i style="color: #ce0572; font-size: 12px; padding-left: 6px;" class="fa-solid fa-greater-than"></i></span> 
+                </p></span> 
+               
+        </div>
+           
+     </div>
+     <div id="container2">
+         <div class="div2">
+             <p class="p1_div2">RETROSPECTIVE</p>
+             <h1 class="h1_div2">Increase product delivery<br> speed</h1>
+             <ul class="ul">
+                 <li>Identify bottlenecks and developer friction</li>
+                 <li>Improve flow efficiency and deployment</li>
+                 <li>Build healthy development patterns</li>
+             </ul>
+         </div>
+         <div class="div2"><img class="img2" src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_2045168047/parsys/columns/column-parsys-2/generic_block/parsys/image/image-res.img.2e16b011-e902-4b46-ad58-1a63a9d185e9.png"></div>
+         <div class="div2"><img class="img3" src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/new-lp-assets/review%20collaboration.png"></div>
+         <div class="div2">
+            <p class="p1_div2">
+                REVIEW COLLABORATION</p>
+            <h1 class="h1_div2">Build a thriving team</h1>
+            <ul class="ul">
+                <li>Improve knowledge sharing and collaboration</li>
+                <li>Coach and develop engineers</li>
+                <li>Reduce onboarding ramp time</li>
+                <li>Lead inclusively and objectively</li>
+            </ul>
+         </div>
+         <div class="div2">
+            <p class="p1_div2">CODE FUNDAMENTALS</p>
+            <h1 class="h1_div2">Drive strategic alignment</h1>
+            <ul class="ul">
+                <li>Standardize healthy practices</li>
+                <li>Verify third-party contract work</li>
+                <li>Evaluate investment decisions</li>
+            </ul>
+         </div>
+         <div class="div2"><img class="img2" src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_2045168047/parsys/columns_copy/column-parsys-2/generic_block/parsys/image/image-res.img.052bddec-f340-40b2-9ddc-19ecc64f9c9c.png"></div>
+     </div>
+  
+    <div id="container3">
+        <div class="div3"><img class="img_div3" src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_855088985/parsys/columns_copy_1209930/column-parsys-1/generic_block/parsys/image/image-res.img.5bc1427e-4585-4f98-81d6-47f302fd674d.png"></div>
+        <div class="div4">
+            <p class="p1_div3">OVERVIEW</p>
+            <h1 class="h1_div3">See your team like never <br> before</h1>
+            <p class="p2_div3">Flow gives you unmatched visibility into your team’s workflow <br> patterns so you can identify bottlenecks, compare trends and <br>
+                help your team be as effective as possible.</p>
+                <p class="p3_div3" >View Flow Demo
+                    <span><i style="color: #ce0572; font-size: 15px; padding-left: 8px;" class="fa-solid fa-greater-than"></i></span> 
+                </p>   <p class="p4_div3" >View Flow Demo
+                    <span><i style="color: #ce0572; font-size: 15px; padding-left: 8px;" class="fa-solid fa-greater-than"></i></span> 
+                </p>
+        </div>
+    </div>
+
+    <div id="container4"> 
+        <h1 class="h1_2">Built for every role</h1>
+        <div class="div5">
+            <div class="div6">
+                <h1 class="h1_div6">Engineers</h1>
+                <p class="p1_div6" >Spend less time on status updates and more time <br> discussing strategy, advocating for your ideas and <br> talking about your career. </p>
+            </div>
+            <div class="div6"><img class="img2" src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_2045168047/parsys/columns/column-parsys-2/generic_block/parsys/image/image-res.img.2e16b011-e902-4b46-ad58-1a63a9d185e9.png"></div>
+            <div class="div6"><img class="img3" src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/new-lp-assets/review%20collaboration.png"></div>
+            <div class="div6">
+                <h1 class="h1_div6">Leaders</h1>
+                <p class="p1_div6" >Improve team patterns, identify over-burdened or <br> blocked engineers, recognize hidden talent and <br> know where you can best help your team grow. </p>
+            </div>
+            <div class="div6">
+                <h1 class="h1_div6">Executives</h1>
+                <p class="p1_div6" >Understand the impact that systemic changes—like <br> agile adoptions, remote work, mergers and <br> acquisitions—have on your business.  </p>
+            </div>
+            <div class="div6"><img class="img2" src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_2045168047/parsys/columns_copy/column-parsys-2/generic_block/parsys/image/image-res.img.052bddec-f340-40b2-9ddc-19ecc64f9c9c.png"></div>
+        </div>
+       
+    </div>
+
+    <div id="container5">
+        <h2 class="h2">INDUSTRY STANDARD</h2>
+        <h1 class="h1_c5">Loved by startups.<br>
+            Trusted by enterprises.</h1>
+         
+        <div class="div7">
+            <div class="div8"><img class="img_div8" src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Manulife.png"></div>
+            <div class="div8"><img class="img_div8" src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Cigna_white.png"></div>
+            <div class="div8"><img class="img_div8" src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Cox_automotive_white.png"></div>
+            <div class="div8"><img class="img_div8" src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/KAR.png"></div>
+            <div class="div8"><img class="img_div8" src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Thomson_reuters_white.png"></div>
+            <div class="div8"><img class="img_div8" src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Rally_white.png"></div>
+        </div>
+        <button class="btn_contain5">VIEW PLAN</button>
+    </div>
+   
+</body>
+</html>
