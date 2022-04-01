@@ -1,0 +1,545 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+/* NavBar code--------------------------------------------------------------------------- */
+
+#navFullscreen {
+    background-color: #212121;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    /* position: relative; */
+    text-decoration: none;
+    padding: 20px 18px 10px 18px;
+    width: 100%;
+    position: fixed;
+
+    margin: auto;
+   
+
+}
+button{
+cursor: pointer;
+}
+
+    
+  
+  #navFullscreen a{
+      text-decoration: none;
+
+      color: white;
+  }
+  #leftContainer img{
+      border-radius: 200px;
+
+  }
+  #pluralsight {
+      margin-top: 14px;
+      font-size: larger;
+      margin-left: -10px;
+      color: #ffffff;
+  }
+
+      
+
+    #navContainer{
+    display: flex;
+    text-decoration: none;
+    width: 1250px;
+    height: 87px;
+    margin: auto;
+    /* border: 5px solid rebeccapurple; */
+    justify-content: space-between;
+    /* padding: 10px; */
+    font-weight: 700;
+    font-size: 15PX;
+    /* gap: 20px; */
+    
+    
+
+    
+}
+   #trybutton {
+    /* padding: 12px 24px ; */
+    background-color: transparent;    
+    border: 1.3px solid #ffffff;
+    width: 147px;
+    height: 40px;
+    color: white;
+    font-size: 13px; 
+    font-weight: 14.3px;
+    margin-left: 1px;
+    
+}
+#signIn {
+    background-color: transparent;    
+    border: 1.3px solid #ffffff;
+    width: 100px;
+    height: 40px;
+    color: white;
+    /* font-size: 13px;  */
+    font-weight: 14.3px;
+    border: 0px;
+    margin-left: -20px;
+    
+
+
+}
+#leftContainer{
+    /* border:1px solid blue; */
+display: flex;
+gap: 20px;
+/* padding-top: 20px; */
+justify-content: left;
+height: 87px;
+width: 760px;
+
+
+}
+#rightContainer{
+    display: flex;
+    /* padding: 20px; */
+    width: 302px;
+    height: auto;          
+    gap: 20px;
+    /* border:3px solid rgb(22, 219, 81);   */
+
+}
+
+
+#leftContainer div{
+    /* margin-left: 3%; */
+    margin-left: 5px;
+    margin-top: 12px;
+    /* font-size: 20px;     */
+    /* border:1px solid blue; */
+    height: 40px; 
+    width: auto;
+    height: 100%;   
+
+}
+#imgPluralSight {
+    height: 35px;
+    /* border: 2px solid green; */
+    
+}
+/* Navbar CSS END HERE---------------------------------------------------------------------------------- */
+
+h6,h4 {
+    color: #e40084;
+}
+#boxFour h6 {
+    color: #d3b237;
+
+}
+
+#backgroundTop {
+    padding: 100px 0px 0px;
+
+background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/hero-illustration.png");
+background-color: black;
+ background-size: 1366px;
+  
+   /* width: 100%; */
+   -webkit-background-size:cover;
+   background-size: cover;
+   /* border: 2px solid green; */
+
+}
+#backgroundTop h6{
+    color: white;
+}
+#containerTopBox {
+    color: white;
+    width: 65%;
+    margin: auto;
+    
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 30px;
+
+
+}
+#btnDivContainer{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 400px;
+    gap: 5px;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    
+}
+
+#viewPlan{
+    
+    padding: 15px 40px 15px 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#F05A28,#EC008C, #F05A28);
+    background-size: 300% 100%;
+    transition: all .6s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+    
+}
+#tryForFree2 {
+    padding: 15px 40px 15px 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+
+}
+
+#companyDiv {
+    width: 870px;
+    height: 59px;
+    display:flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 5px;
+    /* border: 1px solid red; */
+    margin-top: -10px;
+   
+} 
+
+#companyDiv img {
+margin-left: 2%;
+margin-top: 5%;
+
+}
+.vl {
+    border-left: 6px solid ;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    border-image: linear-gradient( to bottom, #EC008C, #F15B2A, rgba(0, 0, 0, 0) ) 1 100%;
+
+  }
+#lineDiv {
+height: 100px;
+margin-top: 50px;
+/* margin-bottom: 50px; */
+/* border: 1px solid white; */
+}
+#backGroundPopularTechToLearn{
+    padding: 50px 0px 100px;
+    background-image: url(/content/dam/pluralsight2/homepage/2022/bkgd-triangle-right.png), url(/content/dam/pluralsight2/homepage/2022/bkgd-triangle-right2.png), url(/content/dam/pluralsight2/homepage/2022/bkgd-triangle-left.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    /* background-repeat-x: no-repeat, no-repeat, no-repeat; */
+    /* background-repeat-y: no-repeat, no-repeat, no-repeat; */
+    background-position: bottom right, right, left;
+    background-position-x: right, right, left;
+    background-position-y: bottom, center, center;
+
+}
+#animation:before {
+    content: '';
+    animation: animate infinite 8s;
+  
+}
+@keyframes animate {
+    0% {
+        content: "teams";
+  
+    }
+    25% {
+        content: "workflow";
+    }
+    50% {
+        content: "process";
+    }
+    75% {
+        content: "products";
+    }
+    100% {
+        content: "skills";
+    }
+
+}
+
+
+.BoxIncludingText
+{     width: 65%;
+    margin: auto;
+    
+    /* border: 1px solid red; */
+    width: 800px;
+    padding: 20px;
+
+
+
+} #fourBoxContainer {
+display: grid;
+grid-template-columns: repeat(2,374px);
+grid-template-rows: 200px;
+gap: 30px;
+/* border: 1px solid #ec008c; */
+/* margin: auto; */
+}
+.innerMostDiv {
+display: flex;
+/* border: 1px solid #ec008c; */
+justify-content: space-between;
+padding: 30px;
+border-radius: 10px;
+  background-color: 
+  #222222;
+}
+.innerMostDiv img {
+width: 100px;
+height: 100px;
+
+}
+#boxThree{
+background-color:#181818;
+/* border: 1px solid green; */
+
+}
+.BoxIncludingTextBoxThree{
+
+/* width: 80%; */
+    margin: auto;
+    
+    /* border: 1px solid red; */
+    padding: 100px 0px;  
+    width: 1300px;
+    height: 850px; 
+}
+#upperContainer {
+display: flex;
+gap: 20px;
+/* width: 604px;
+height: 438px; */
+width: 97%;
+           
+/* border: 20px solid red; */
+
+
+}
+#upperContainer>img{
+width: 799px;
+width: 531px;
+margin-left: 200px;
+/* padding-bottom: 50%; */
+}
+#upperContainer>div{
+/* margin-right: 20px; */
+padding: 50px 30px;
+/* width: 312px;
+height: 376px; */
+/* font-size:large ; */
+}
+#lowerContainer{
+margin-top: 50px;
+padding: 50px 30px;
+
+display: grid;
+gap: 30px;
+grid-template-columns: repeat(3,1fr);
+}
+#lowerContainer div {
+    background-color:#222222;padding: 20px;
+border-radius: 15px;
+}
+a{
+color: white;
+text-decoration: none;
+}
+.BoxIncludingTextBoxFour {
+ width: 1400px;
+ height: 521px;
+    margin: auto;
+    
+    /* border: 1px solid red; */
+    padding: 20px; 
+
+}
+#moreAboutFourBox{
+
+margin-top: 50px;
+display: grid;
+gap: 30px;
+margin: auto;
+grid-template-columns: repeat(4,1fr);
+
+/* border: 1px solid blue; */
+
+}
+#moreAboutFourBox div {
+/* padding: 20px; */
+/* border: 1px solid green; */
+}
+#moreAboutFourBox img{
+width: 90%;
+}
+#twoImg{
+margin-top: 100px;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+/* grid-template-rows: auto; */
+
+/* border: 4px solid blue; */
+
+}
+#manImg {
+
+width: 786px;
+height: 535px;
+margin: 0px;
+opacity: 0.7;
+/* background: #181818; */
+ /* background-color: rgba(0, 0, 0, 0.5)!important; */
+/* filter: drop-shadow(8px 8px 10px gray); */
+}
+
+
+#SideRightDiv {
+background-color:#189db3 ;
+font-size: 20px;
+padding: 100px 60px;
+/* border: 1px solid red; */
+/* width:max-content; */
+/* height: 700px; */
+/* box-sizing: border-box; */
+width: 535px;
+
+}
+
+#twoImg button {
+padding: 20px 40px 20px 40px;
+background-color: black;
+color: white;
+font-weight: 200;
+font-size: large;
+}
+
+#boxFour {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: auto;
+    /* background-color: #bdb7ba; */
+}
+#boxFourWithText{
+width: 1350px;
+height: 497px;
+    margin: auto;
+    
+    /* border: 1px solid red; */
+    /* padding: 20px;  */
+    text-align: center;
+   
+
+}
+#threeBoxDiv {
+display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0px;
+    height: 300px;
+    /* border: 1px solid red; */
+
+}
+#boxFourWithText img {
+width: 379px;
+height: 239px;
+margin-bottom: 100px;
+border: 3px red;
+margin-left: 10px;
+
+
+}
+#childBackground {
+background-image: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_1609496607/image-res.img.72ec2054-77b4-4614-a60e-5e2dc2ed0f66.jpg");
+margin-top: 100px;
+/* background-size: 100%; */
+border: 3px red;
+-webkit-background-size:cover;
+background-size: cover;
+
+
+
+}
+#innerContainer {
+    /* width: 50%; */
+margin: auto;
+padding: 20px;
+/* border: 3px red; */
+    justify-content: flex-start;
+
+}
+
+#Content {
+    width:666px ;
+    height: 398px;
+    /* border: 3px red; */
+    /* justify-content: flex-start; */
+
+}
+#Content img{
+    margin-left: -40px;
+}
+#childBackground button {
+text-decoration: none;
+padding: 20px 40px 20px 40px;
+background-color: transparent ;
+border: 1px solid white;
+color: white;
+}
+#singleLineDiv {
+/* width: 80%; */
+margin: auto;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+margin-top: 100px;
+/* margin-left: 100px; */
+/* justify-content: end; */
+width: 1498px;
+/* height: 258px;  */
+background-color: #181818;
+padding: 100px 0px;
+
+
+}
+
+#singleLineDiv button{
+padding: 15px 40px 15px 40px;
+text-decoration: none;
+background-image: linear-gradient(to right,#F05A28,#EC008C, #F05A28);/* border: 1px solid white; */
+border: 0px;
+color: white;
+margin-left: 200px;
+font-size: 16px;
+border-radius: 2px;
+
+    background-size: 300% 100%;
+    transition: all .6s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+
+}
+#first{
+    margin-left: 15px;
+
+}
