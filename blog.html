@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    
+    <style>
+        body{
+            background-color: black;
+        }
+        #box{
+            display:flex;
+            width:100%;
+            height:500px;
+            /* border:1px solid red; */
+            margin:auto;
+            background-color: #181818;
+            
+            
+        }
+        #box>#box-1{
+            width:40%;
+            background-color: #222222;
+
+            /* border:1px solid; */
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
+            /* padding-right: 30px; */
+            
+        }
+        
+        #box>#box-2{
+            width:60%;
+
+            /* border:1px solid; */
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: #181818;
+            /* border:1px solid red; */
+            width:100%;
+            height:auto;
+            margin:auto;
+            gap:25px;
+
+        }
+        #container>div{
+            /* border:1px solid yellow; */
+            background-color: #222222;
+            padding-top: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 100px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #last-box{
+            display: grid;
+            width: 100%;
+            height:1200px;
+            gap:30px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,550px);
+            /* border:1px solid teal ; */
+            margin:auto;
+            /* margin-top: 20px; */
+            background-color: #181818;
+        }
+        #last-box>div{
+            /* border:1px solid red; */
+            background-color: #222222;
+            margin: 20px;
+        }
+        .last-sec{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            height:400px
+            /* border:1px solid red; */
+
+            
+
+        }
+        .last-sec>div{
+            /* border:1px solid yellow; */
+            padding-top: 20px;
+            padding-left: 50px;
+            /* padding-right: 20px; */
+            background-color: #222222;
+            /* background-color: #363636; */
+        }
+        
+        #im{
+            width:100%;
+            height: auto;
+        }
+        p{
+            font-size: 15px;
+            color: #95a0a6;
+            font-weight: bolder;
+        }
+        h4{
+            color: #ec067b;
+            font-weight: bolder;
+        }
+        h3{
+            color: white;
+            font-weight: bolder;
+        }
+        h6{
+            color:white;
+            font-size: 15px;
+        }
+        
+        h5 {
+            cursor: pointer;
+            color:#95a0a6;
+        }
+        h1{
+            color:white;
+        }
+        #symbol{
+            width: 100%;
+            height:200px;
+            background-color: white;
+            border: #ec067b;
+            /* padding-left: 30px; */
+            background-color: #222222;
+        }
+        hr{
+            width:95%;
+            border: 0.01px solid #95a0a6;
+            
+        }
+        .icon{
+            color: white;
+            padding-left: 30px;
+            font-size: 20px;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="box-1">
+            <h4>Article</h4>
+            <h1>What’s the top barrier to cloud maturity?</h1>
+            <p>Pluralsight’s Drew Firment, who holds a patent for measuring cloud maturity, offers insights on what’s required to...</p>
+        </div>
+        <div id="box-2">
+            <img height="100%" width="100%" src="https://www.pluralsight.com/content/pluralsight/en/blog/learning-and-development/clo/cloud-maturity-barrier/jcr:content/hub-image/file.img.379a6b2e-16e0-433b-ba3a-7d74cadc92ad.png"/>
+        </div>
+    </div>
+    <div id="container">
+        <div>
+            
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/teams/pil/pil-diversity-equity-inclusion/jcr:content/image-res/file.img.f03c55f9-493c-4d3a-abbb-b928232e2271.png"/>
+            <h4>Article</h4>
+            <h3>Perspectives in Leadership: Diversity, equity and inclusion</h3>
+            <p>Wisdom from Matthew J. Yazzie, who has spent nearly twenty years working on diversity, equity and inclusion (DEI)...</p>
+            
+        </div>
+        <div>
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/software-development/plu/pluralsight-flows-sprint-movement-report/jcr:content/image-res/file.img.42a7f41e-70a7-4d8b-b0f6-ec9feddd70d2.png"/>
+            <h4>Article</h4>
+            <h3>How to improve your delivery success rate with Pluralsight Flow’s Sprint Movement report</h3>
+            <p>Pluralsight Flow’s new Sprint Movement report helps remove developer bottlenecks to optimize coding time and create...</p>
+        </div>
+        <div>
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/software-development/pel/peloton-strava-and-the-importance-of-statistical-dashboards/jcr:content/image-res/file.img.43774698-d7b8-47cb-bf21-9087c95ba836.png"/>
+            <h4>Article</h4>
+            <h3>Peloton, Strava and the importance of statistical dashboards</h3>
+            <p>See how Pluralsight Flow helps developers grow in their roles and create more unity on their teams.</p>
+        </div>
+    </div>
+
+    <div id="container">
+        <div>
+            
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/software-development/gar/gartner-names-flow-a-representative-vendor-for-value-stream/jcr:content/image-res/file.img.8197e8af-b8df-4eb2-81cc-bd5a3094b630.jpg"/>
+            <h4>Article</h4>
+            <h3>Gartner® names Pluralsight Flow as a Representative Vendor for value stream tool for software engineering leaders</h3>
+            <p>Wisdom from Matthew J. Yazzie, who has spent nearly twenty years working on diversity, equity and inclusion (DEI)...</p>
+            
+        </div>
+        <div>
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/data-professional/pil/pil-leveraging-data-to-enhance-the-developer-experience/jcr:content/image-res/file.img.ffef923e-35a1-497c-8c0c-cdf60cd0b257.jpg"/>
+            <h4>Article</h4>
+            <h3>How to improve your delivery success rate with Pluralsight Flow’s Sprint Movement report</h3>
+            <p>Pluralsight Flow’s new Sprint Movement report helps remove developer bottlenecks to optimize coding time and create...</p>
+        </div>
+        <div>
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/teams/lev/level-up-your-developers-experience-with-engineering-insights/jcr:content/image-res/file.img.2e33ff63-4644-41e2-bfee-d80ddd6399c7.jpg"/>
+            <h4>Article</h4>
+            <h3>Peloton, Strava and the importance of statistical dashboards</h3>
+            <p>See how Pluralsight Flow helps developers grow in their roles and create more unity on their teams.</p>
+        </div>
+    </div>
+
+    <div id="container">
+        <div>
+            
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/teams/why/why-every-team-lead-should-be-scheduling-a-hackathon/jcr:content/image-res/file.img.69c86105-a819-4676-9f49-3676754ac87b.png"/>
+            <h4>Article</h4>
+            <h3>Perspectives in Leadership: Diversity, equity and inclusion</h3>
+            <p>Wisdom from Matthew J. Yazzie, who has spent nearly twenty years working on diversity, equity and inclusion (DEI)...</p>
+            
+        </div>
+        <div>
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/teams/pil/pil-bath-bombs-dont-cure-burnout/jcr:content/image-res/file.img.360b9c02-e647-42f3-afd8-ff1e7fd47de7.png"/>
+            <h4>Article</h4>
+            <h3>How to improve your delivery success rate with Pluralsight Flow’s Sprint Movement report</h3>
+            <p>Pluralsight Flow’s new Sprint Movement report helps remove developer bottlenecks to optimize coding time and create...</p>
+        </div>
+        <div>
+            <img id="im" src="https://www.pluralsight.com/content/pluralsight/en/blog/teams/flo/flow-check-in-report/jcr:content/image-res/file.img.333d975d-9bd8-46b2-a321-642ba6fb7263.jpg"/>
+            <h4>Article</h4>
+            <h3>Peloton, Strava and the importance of statistical dashboards</h3>
+            <p>See how Pluralsight Flow helps developers grow in their roles and create more unity on their teams.</p>
+        </div>
+    </div>
+    <div id="last-box">
+        <div>
+            <img height='270px' width="100%" src="https://www.pluralsight.com/content/pluralsight/en/blog/platform/men/mental-health-awareness-in-tech/jcr:content/image-res/file.img.c86e0d9e-d28b-4461-b7a1-09f44ec7321c.png"/>
+            <h4>Article</h4>
+            <h3>The importance of mental health awareness in tech</h3>
+            <p>Discussing the importance of addressing mental health in the tech industry and ways to help create safe spaces to...</p>
+        </div>
+        <div>
+            <img height='350px' width="100%" src="https://www.pluralsight.com/content/pluralsight/en/blog/platform/dor/dora-and-flow/jcr:content/image-res/file.img.65a8c4ca-d916-44a1-afda-f486f64ac439.png"/>
+            <h4>Article</h4>
+            <h3>The importance of mental health awareness in tech</h3>
+            <p>Discussing the importance of addressing mental health in the tech industry and ways to help create safe spaces to...</p>
+        </div>
+        <div>
+            <img height='430px' width="100%" src="https://www.pluralsight.com/content/dam/pluralsight2/general/brand-photos/environment-overhead-008-hero.jpg"/>
+            
+            <h3>Pluralsight LIVE Week 3 recap: Power to the programmers</h3>
+            
+        </div>
+        <div>
+            <img height='430px' width="100%" src="https://www.pluralsight.com/content/pluralsight/en/blog/news/plu/pluralsight-expands-hands-on-learning/jcr:content/hub-image/file.img.1cbe72fe-71d1-4536-8321-6b85730bdf99.png"/>
+            
+            <h3>Pluralsight Expands Hands-On Learning Opportunities With New Skills Capabilities</h3>
+           
+        </div>
+    </div>
+    <div class="last-sec">
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+        </div>
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+        </div>
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+        </div>
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+        </div>
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+            
+        </div>
+        
+    </div>
+    <div id="symbol" >
+        <br>
+        <hr>
+        <h5><i class="fa-solid fa-globe icon"></i> &emsp; Deutsch &emsp;English &emsp;French</h5>
+        <hr>
+        <h5><img style="height: 30px;margin-left: 20px; margin-top: 20px;"  src="https://www.pluralsight.com/content/dam/pluralsight2/general/icons/light/ps-icon.png"/>
+            &emsp; Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Term of use &emsp;
+            Privacy Notice &emsp; Modern Slavery Act Transparency Statement  &emsp; <i class="fa-brands fa-facebook-f"></i>
+            &emsp;<i class="fa-brands fa-instagram-square"></i>&emsp;<i class="fa-brands fa-twitter"></i> &emsp;<i class="fa-brands fa-linkedin-in"></i>
+            &emsp; <i class="fa-brands fa-youtube"></i>
+
+        </h5>
+
+    </div>
+
+</body>
+</html>

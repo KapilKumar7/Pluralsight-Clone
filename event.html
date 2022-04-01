@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <head></head>
+    <style>
+        body{
+            background-color: #181818;
+        }
+        #box{
+            flex-direction: row;
+            width:100%;
+            height:400px;
+            /* border:2px solid teal; */
+            background-color: black;
+            padding-top: 100px;
+            
+            
+            
+            
+        }
+        
+        #box>div{
+            
+            width:80%;
+            height:450px;
+            /* border:1px solid; */
+            margin:auto;
+            /* margin-top: 100px; */
+            background-image: url(https://www.pluralsight.com/content/pluralsight/en/events/jcr:content/main/generic_block_1608290365/parsys/animation_wrapper/parsys/generic_block/parsys/columns/column-parsys-1/generic_block/image-res.img.d9925e3a-45aa-4dda-9714-01dadffe15e3.jpg);
+        }
+        #inner{
+            width:58%;
+            height:300px;
+            /* border:1px solid yellow; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-top: 20px;
+            
+        }
+        #img1{
+            height: 100%;
+            width: 100%;
+        }
+        .one{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* border:1px solid red; */
+            gap:10px;
+            margin-top: 250px;
+            background-color: #181818;
+            height:500px;
+            margin-bottom: 200px;
+
+
+        }
+        .one>div{
+            /* border:1px solid yellow; */
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-color: #222222;
+
+        }
+        .last{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            height:400px
+            /* border:1px solid red; */
+
+            
+
+        }
+        .last>div{
+            /* border:1px solid yellow; */
+            padding-top: 20px;
+            padding-left: 50px;
+            /* padding-right: 20px; */
+            background-color: #222222;
+            /* background-color: #363636; */
+            /* background-color: #363636; */
+        }
+        .last>div>p :hover{
+            cursor: pointer;
+
+        }
+        form{
+            width: 300px;
+            /* border: 1px solid rgb(230, 230, 230); */
+            margin: 3% auto;
+            padding: 3%;
+            background: #222222;
+            height:400px;
+        }
+        h4{
+            color: #ec067b;
+            font-weight: bolder;
+        }
+        h3{
+            color:white;
+            font-size: 30px;
+        }
+        h2{
+            color:white;
+            font-size: 38px;
+        }
+        p{
+            color:white;
+            font-size: 20px;
+        }
+        h1{
+            text-indent: 130px;
+            color:white;
+            font-size: 48px;
+        }
+        #type{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            
+            background-color:#222222 ;
+            color: white;
+
+        }
+        h6{
+            color:white;
+            font-size: 15px;
+        }
+        
+        h5 {
+            cursor: pointer;
+            color:#95a0a6;
+        }
+        #symbol{
+            width: 100%;
+            height:200px;
+            background-color: white;
+            border: #ec067b;
+            /* padding-left: 30px; */
+            background-color: #222222;
+        }
+        hr{
+            width:95%;
+            border: 0.01px solid #95a0a6;
+            
+        }
+        .icon{
+            color: white;
+            padding-left: 30px;
+            font-size: 20px;
+        }
+        #button{
+            height:60px;
+            width:250px;
+            font-size: 20px;
+            background-color: #ed295e;
+            border:none;
+        }
+        button{
+            height:30px;
+            width:200px;
+            font-size: 15px;
+            background-color: #f7a614;
+            border:none;
+            border-radius: 15px;
+
+        }
+        .fa-angle-right{
+            color:#ed295e;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Pluralsight Events</h1>
+        <div>
+            <div id="inner" >
+                <h4 >PLURALSIGHT LIVE</h4>
+                <h2>Missed us at LIVE 2021?</h2>
+                <p>Catch up on must-see keynotes from Pluralsight co-founder and CEO, Aaron Skonnard, 
+                and other product leaders; Global Chief Technology Officer of Walgreens Boots Alliance, 
+                Mike Maresca; Chief Product and Technology Officer of Khoros, Sejal Amin, and many more.</p>
+                <button id="button" >WATCH ON-DEMAND</button>
+
+            </div>
+            
+        </div>
+        
+        
+
+    </div>
+    
+    
+        <div class="one">
+            <div>
+                <form >
+                    <h2>Upcoming Events</h2>
+                    <br>
+                    <h3>Filter events</h3>
+                    <br>
+                    <select id="type"  style="height: 50px; width: 300px; font-size: 20px;">
+                        <option value="">Event type</option>
+                        <option value="">Briefings & Workshops</option>
+                        <option value="">In Platform Conferences</option>
+                        <option value="">Product & Tech Demo</option>
+                        <option value="">Trade Shows</option>
+                        <option value="">User Groups</option>
+                        <option value="">Webinars</option>
+
+                    </select>
+                    <br>
+                    
+                    <select id="type" style="height: 50px; width: 300px; font-size: 20px;">
+                        <option value="">Region</option>
+                        <option value="">All Regions</option>
+                        <option value="">Americas</option>
+                        <option value="">APAC</option>
+                        <option value="">EMEA</option>
+                        
+
+                    </select>
+                    <!-- <input type="text" placeholder="Event type"/>
+                    <input type="text" placeholder="Region"/> -->
+
+                </form>
+            </div>
+            <div>
+                <button>Product and Tech Demo</button>
+                <br>
+                <h3>Enablement Demos</h3>
+                
+                <p>Get the most from Pluralsight by joining one of our Enablement Demo Sessions.</p>
+                <br>
+                <p><i class="fa-solid fa-calendar-days"></i>&emsp; Mar 31,2022 <i class="fa-solid fa-clock-five" style="color:white" ></i>&emsp;1:00 PM GMT</p>
+                <p><i class="fa-solid fa-globe"></i>&emsp;EMEA</p>
+                <br>
+                <p>Learn More &emsp; <i class="fa-solid fa-angle-right"></i></p>
+            </div>
+            <div>
+                <button>Product and Tech Demo</button>
+                <br>
+                <h3>Advance your cloud learning strategy at...</h3>
+                <br>
+                <br>
+                <br>
+                <p><i class="fa-solid fa-calendar-days"></i>&emsp; Mar 31,2022 <i class="fa-solid fa-clock-five" style="color:white" ></i>&emsp;1:00 PM GMT</p>
+                <p><i class="fa-solid fa-globe"></i>&emsp;EMEA</p>
+                <br>
+                
+                <p>Learn More &emsp; <i class="fa-solid fa-angle-right"></i></p>
+            </div>
+            <div>
+                <button>Product and Tech Demo</button>
+                <br>
+                <h3>Tackling the Great Resignation </h3>
+                
+                <p>Get the most from Pluralsight by joining one of our Enablement Demo Sessions.</p>
+                <br>
+                <p><i class="fa-solid fa-calendar-days"></i>&emsp; Mar 31,2022 <i class="fa-solid fa-clock-five" style="color:white" ></i>&emsp;1:00 PM GMT</p>
+                <p><i class="fa-solid fa-globe"></i>&emsp;EMEA</p>
+                <br>
+                <p>Learn More &emsp; <i class="fa-solid fa-angle-right"></i></p>
+            </div>
+        </div>
+        <div class="one">
+            <div>
+                <form >
+                    <h2>On-Demand Events</h2>
+                    <br>
+                    <h3>Filter events</h3>
+                    <br>
+                    <select id="type"  style="height: 50px; width: 300px; font-size: 20px;">
+                        <option value="">Event type</option>
+                        <option value="">Briefings & Workshops</option>
+                        <option value="">In Platform Conferences</option>
+                        <option value="">Product & Tech Demo</option>
+                        <option value="">Trade Shows</option>
+                        <option value="">User Groups</option>
+                        <option value="">Webinars</option>
+
+                    </select>
+                    <br>
+                    <select id="type"  style="height: 50px; width: 300px; font-size: 20px;">
+                        <option value="">Region</option>
+                        <option value="">All Regions</option>
+                        <option value="">Americas</option>
+                        <option value="">APAC</option>
+                        <option value="">EMEA</option>
+                        
+
+                    </select>
+                    <!-- <input type="text" placeholder="Event type"/>
+                    <input type="text" placeholder="Region"/> -->
+
+                </form>
+                
+            </div>
+            <div>
+                <button>Briefing & workshops</button>
+                <br>
+                <h3>Connect: Cloud Migration</h3>
+                
+                <p>Get the most from Pluralsight by joining one of our Enablement Demo Sessions.</p>
+                <br>
+                <p><i class="fa-solid fa-calendar-days"></i>&emsp; Mar 31,2022 <i class="fa-solid fa-clock-five" style="color:white" ></i>&emsp;1:00 PM GMT</p>
+                <p><i class="fa-solid fa-globe"></i>&emsp;EMEA</p>
+                <br>
+                <p>Learn More &emsp; <i class="fa-solid fa-angle-right"></i></p>
+            </div>
+            <div>
+                <button>Product and Tech Demo</button>
+                <br>
+                <h3>Pluralsight Connect: Workforce Transformation</h3>
+                
+                <p>Get the most from Pluralsight by joining one of our Enablement Demo Sessions.</p>
+                <br>
+                <p><i class="fa-solid fa-calendar-days"></i>&emsp; Mar 31,2022 <i class="fa-solid fa-clock-five" style="color:white" ></i>&emsp;1:00 PM GMT</p>
+                <p><i class="fa-solid fa-globe"></i>&emsp;EMEA</p>
+                <br>
+                <p>Learn More &emsp; <i class="fa-solid fa-angle-right"></i></p>
+            </div>
+            <div>
+                <button>Product and Tech Demo</button>
+                <br>
+                <h3>The AI Summit-Silicon Valley</h3>
+                
+                <p>Get the most from Pluralsight by joining one of our Enablement Demo Sessions.</p>
+                
+                <p><i class="fa-solid fa-calendar-days"></i>&emsp; Mar 31,2022 <i class="fa-solid fa-clock-five" style="color:white" ></i>&emsp;1:00 PM GMT</p>
+                <p><i class="fa-solid fa-globe"></i>&emsp;EMEA</p>
+                <br>
+                <p>Learn More &emsp; <i class="fa-solid fa-angle-right"></i></p>
+            </div>
+            
+        </div>
+        <div class="last">
+            <div>
+                <h6>SUPPORT</h6>
+                <br>
+                <h5>Pluralsight Skills</h5>
+                <h5>Pluralsight Flow</h5>
+                <h5>Government</h5>
+                <h5>Gift of Pluralsight</h5>
+                <h5>View Pricing</h5>
+                <h5>Contact Sales</h5>
+            </div>
+            <div>
+                <h6>SUPPORT</h6>
+                <br>
+                <h5>Pluralsight Skills</h5>
+                <h5>Pluralsight Flow</h5>
+                <h5>Government</h5>
+                <h5>Gift of Pluralsight</h5>
+                <h5>View Pricing</h5>
+                <h5>Contact Sales</h5>
+            </div>
+            <div>
+                <h6>SUPPORT</h6>
+                <br>
+                <h5>Pluralsight Skills</h5>
+                <h5>Pluralsight Flow</h5>
+                <h5>Government</h5>
+                <h5>Gift of Pluralsight</h5>
+                <h5>View Pricing</h5>
+                <h5>Contact Sales</h5>
+            </div>
+            <div>
+                <h6>SUPPORT</h6>
+                <br>
+                <h5>Pluralsight Skills</h5>
+                <h5>Pluralsight Flow</h5>
+                <h5>Government</h5>
+                <h5>Gift of Pluralsight</h5>
+                <h5>View Pricing</h5>
+                <h5>Contact Sales</h5>
+            </div>
+            <div>
+                <h6>SUPPORT</h6>
+                <br>
+                <h5>Pluralsight Skills</h5>
+                <h5>Pluralsight Flow</h5>
+                <h5>Government</h5>
+                <h5>Gift of Pluralsight</h5>
+                <h5>View Pricing</h5>
+                <h5>Contact Sales</h5>
+            </div>
+        </div>
+    </div>
+    <div id="symbol" >
+        <br>
+        <hr>
+        <h5><i class="fa-solid fa-globe icon"></i> &emsp; Deutsch &emsp;English &emsp;French</h5>
+        <hr>
+        <h5><img style="height: 30px;margin-left: 20px; margin-top: 20px;"  src="https://www.pluralsight.com/content/dam/pluralsight2/general/icons/light/ps-icon.png"/>
+            &emsp; Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Term of use &emsp;
+            Privacy Notice &emsp; Modern Slavery Act Transparency Statement  &emsp; <i class="fa-brands fa-facebook-f"></i>
+            &emsp;<i class="fa-brands fa-instagram-square"></i>&emsp;<i class="fa-brands fa-twitter"></i> &emsp;<i class="fa-brands fa-linkedin-in"></i>
+            &emsp; <i class="fa-brands fa-youtube"></i>
+
+        </h5>
+
+    </div>
+</body>
+</html>
