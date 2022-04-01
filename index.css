@@ -383,10 +383,7 @@ grid-template-columns: repeat(4,1fr);
 /* border: 1px solid blue; */
 
 }
-#moreAboutFourBox div {
-/* padding: 20px; */
-/* border: 1px solid green; */
-}
+
 #moreAboutFourBox img{
 width: 90%;
 }
