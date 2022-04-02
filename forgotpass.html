@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container4 {
+            /* border: 1px red solid; */
+            height: 630px;
+            width: 100%;
+            background-color: #0D0F12;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box1 {
+            /* border: 1px solid white; */
+            height: auto;
+            width: 500px;
+            text-align: left;
+            color: white;
+            padding-left: 150px;
+        }
+
+        #email2 {
+            background-color: #0D0F12;
+            color: white;
+            border-color: grey;
+            width: 300px;
+            height: 30px;
+            border-radius: 4px;
+
+        }
+
+        #sendemail {
+            background-color: #006395;
+            color: white;
+            width: 310px;
+            height: 30px;
+            border-radius: 4px;
+
+        }
+
+        #cancel {
+            text-decoration: none;
+            color: white;
+            background-color: #333840;
+            width: 310px;
+            height: 30px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body style="font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
+    <div>
+        <div id="container4">
+            <div id="box1">
+                <img src="https://app.pluralsight.com/id/img/login-logo.png" alt=""> <br><br><br>
+                <h1>Forgot Password</h1> <br>
+                <h2>Enter your email address and we'll send you a link to reset your password</h2>
+                <br>
+                <h3>Email</h3>
+                <input id="email2" type="email"> <br><br>
+
+                <button id="sendemail">Send email</button> <br><br>
+                <button id="cancel"><a href="signin.html" id="cancel"> Cancel</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="forgotpass.js"></script>
