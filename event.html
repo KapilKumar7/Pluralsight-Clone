@@ -11,6 +11,135 @@
     <title>Document</title>
     <head></head>
     <style>
+        html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+              body{
+            background-color: black;
+        }
+        #navFullscreen {
+    background-color: #212121;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    /* position: relative; */
+    text-decoration: none;
+    padding: 20px 18px 10px 18px;
+    width: 100%;
+    position: fixed;
+
+    margin: auto;
+   
+
+}
+button{
+cursor: pointer;
+}
+
+    
+  
+  #navFullscreen a{
+      text-decoration: none;
+
+      color: white;
+  }
+  #leftContainer img{
+      border-radius: 200px;
+
+  }
+  #pluralsight {
+      margin-top: 14px;
+      font-size: larger;
+      margin-left: -10px;
+      color: #ffffff;
+  }
+
+      
+
+    #navContainer{
+    display: flex;
+    text-decoration: none;
+    width: 1250px;
+    height: 87px;
+    margin: auto;
+    /* border: 5px solid rebeccapurple; */
+    justify-content: space-between;
+    /* padding: 10px; */
+    font-weight: 700;
+    font-size: 15PX;
+    /* gap: 20px; */
+    
+    
+
+    
+}
+   #trybutton {
+    /* padding: 12px 24px ; */
+    background-color: transparent;    
+    border: 1.3px solid #ffffff;
+    width: 147px;
+    height: 40px;
+    color: white;
+    font-size: 13px; 
+    font-weight: 14.3px;
+    margin-left: 1px;
+    
+}
+#signIn {
+    background-color: transparent;    
+    border: 1.3px solid #ffffff;
+    width: 100px;
+    height: 40px;
+    color: white;
+    /* font-size: 13px;  */
+    font-weight: 14.3px;
+    border: 0px;
+    margin-left: -20px;
+    
+
+
+}
+#leftContainer{
+    /* border:1px solid blue; */
+display: flex;
+gap: 20px;
+/* padding-top: 20px; */
+justify-content: left;
+height: 87px;
+width: 760px;
+
+
+}
+#rightContainer{
+    display: flex;
+    /* padding: 20px; */
+    width: 302px;
+    height: auto;          
+    gap: 20px;
+    /* border:3px solid rgb(22, 219, 81);   */
+
+}
+
+
+#leftContainer div{
+    /* margin-left: 3%; */
+    margin-left: 5px;
+    margin-top: 12px;
+    /* font-size: 20px;     */
+    /* border:1px solid blue; */
+    height: 40px; 
+    width: auto;
+    height: 100%;   
+
+}
+#imgPluralSight {
+    height: 35px;
+    /* border: 2px solid green; */
+    
+}
         body{
             background-color: #181818;
         }
@@ -184,6 +313,26 @@
     </style>
 </head>
 <body>
+    <div id="navFullscreen">
+        <div id="navContainer">
+            
+            <div id="leftContainer">
+                <div ><img style="margin-top:-7.5px;" id="imgPluralSight"  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-60x60.png" alt="">
+                              </div>
+                              <a id="pluralsight" href="index.html"> PLURALSIGHT</a> 
+                <div><a href="">Platform <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="">Products <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="">Resources <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+               <div><a href="">For Individuals <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+            </div>
+            <div id="rightContainer">
+               <div style="font-size: 20px;padding-top:7px;"><i class="fa-solid fa-magnifying-glass"></i></div>
+               <div><button id="signIn" >Sign in <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button></div>
+              <a href=""><button id="trybutton">Try For Free</button></a> 
+    
+            </div>
+        </div>
+          </div>   
     <div id="box">
         <h1>Pluralsight Events</h1>
         <div>
