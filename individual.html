@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Individuals</title>
+    <style>
+        html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+
+           /* NavBar code--------------------------------------------------------------------------- */
+
+#navFullscreen {
+    background-color: #212121;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    /* position: relative; */
+    text-decoration: none;
+    padding: 20px 18px 10px 18px;
+    width: 100%;
+    position: fixed;
+
+    margin: auto;
+   
+
+}
+button{
+cursor: pointer;
+}
+
+    
+  
+  #navFullscreen a{
+      text-decoration: none;
+
+      color: white;
+  }
+  #leftContainer img{
+      border-radius: 200px;
+
+  }
+  #pluralsight {
+      margin-top: 14px;
+      font-size: larger;
+      margin-left: -10px;
+      color: #ffffff;
+  }
+
+      
+
+    #navContainer{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    /* border: 5px solid rebeccapurple; */
+    justify-content: space-between;
+    /* padding: 10px; */
+    font-weight: 700;
+    font-size: 15PX;
+    /* gap: 20px; */
+    
+    
+
+    
+}
+   #trybutton {
+    /* padding: 12px 24px ; */
+    background-color: transparent;    
+    border: 1.3px solid #ffffff;
+    width: 147px;
+    height: 40px;
+    color: white;
+    font-size: 13px; 
+    font-weight: 14.3px;
+    margin-left: 1px;
+    
+}
+#signIn {
+    background-color: transparent;    
+    border: 1.3px solid #ffffff;
+    width: 100px;
+    height: 40px;
+    color: white;
+    /* font-size: 13px;  */
+    font-weight: 14.3px;
+    border: 0px;
+    margin-left: -20px;
+    
+
+
+}
+#leftContainer{
+    /* border:1px solid blue; */
+display: flex;
+gap: 20px;
+/* padding-top: 20px; */
+justify-content: left;
+height: 87px;
+width: 760px;
+
+
+}
+#rightContainer{
+    display: flex;
+    /* padding: 20px; */
+    width: 302px;
+    height: auto;          
+    gap: 20px;
+    /* border:3px solid rgb(22, 219, 81);   */
+
+}
+
+
+#leftContainer div{
+    /* margin-left: 3%; */
+    margin-left: 5px;
+    margin-top: 12px;
+    /* font-size: 20px;     */
+    /* border:1px solid blue; */
+    height: 40px; 
+    width: auto;
+    height: 100%;   
+
+}
+#imgPluralSight {
+    height: 35px;
+    /* border: 2px solid green; */
+    
+}
+/* Navbar CSS END HERE---------------------------------------------------------------------------------- */
+
+
+        .parent {
+            display: flex;
+            width: 90%;
+            height: 600px;
+            margin: auto;
+        }
+        #container1{
+            margin: auto;
+        }
+        h5 {
+            color: white;
+        }
+        h1 {
+            color: white;
+            font-weight: bolder;
+        }
+        p {
+            color: white;
+        }
+        .btnn {
+            background-image: linear-gradient(to right,#F05A28,#EC008C, #F05A28);
+            width: 210px;
+            height: 55px;
+            color: white;
+        }
+        #container2 {
+            margin: auto;
+        }
+        #container2 > img {
+            width: 800px;
+            height: 400px;
+
+        }
+        body {
+            background-color: black;
+        }
+        h2{
+           color: white;
+        }
+       #pvid{
+           width: 100%;
+           height: 400px;
+           text-align: center;
+       }
+       #pvid>img{
+           width: 90%;
+           height: 350px;
+       }
+       #vmc{
+           width: 90%;
+           height: 80px;
+           margin: auto;
+           background-color: #181818;
+       }
+       h3{
+           color: white;
+           margin-top: 5px;
+           padding: 20px;
+        
+       }
+       #otc{
+           width: 90%;
+           height: 100%;
+           margin: auto;
+           background-color: #222222;
+           border-radius: 14px;
+           margin-top: 5%;
+           font-size: 14px;
+       }
+       #imgc{
+            display: flex;
+            margin: auto;
+            padding: 80px;
+            font-size: 14px;
+           color: #eeeeee;
+            /* border: 1px solid blue; */
+       }
+       #imgc>div{
+            width:40%;
+            /* margin-left: 5%; */
+            justify-content: end;
+            justify-content: space-evenly;
+       }
+       #imgc1{
+           display: flex;
+           margin: auto;
+           padding: 50px;
+           font-size: 14px;
+           color: #eeeeee;
+           /* border: 1px solid blue; */
+
+       }
+       #imgc1>div{
+           width: 60%;
+           justify-content: space-evenly;
+       }
+       #imgc2{
+           display: flex;
+           margin: auto;
+           padding: 50px;
+           font-size: 14px;
+           color: #eeeeee;
+           /* border: 1px solid blue; */
+       }
+       #imgc2>div{
+           width: 60%;
+           justify-content: space-evenly;
+       }
+       #imgc3{
+           display: flex;
+           margin: auto;
+           padding: 50px;
+           font-size: 14px;
+           color: #eeeeee;
+           /* border: 1px solid blue; */
+       }
+       #imgc3>div{
+           width: 60%;
+           justify-content: space-evenly;
+       }
+       #imgc4{
+           width: 70%;
+           display: flex;
+           font-size: 14px;
+           margin: auto;
+           padding: 20px;
+           color: #eeeeee;
+           /* border: 1px solid blue; */
+           justify-content: center;
+       }
+       #imgc4>div{
+           width: 70%;
+           
+       }
+       a{
+           padding: 0px 0px 3px;
+           font-size: 17px;
+           color: #ffffff;
+       }
+    
+       /* --------------addd -------------- */
+       #companyDiv {
+            width: 70%;
+            display:flex;
+            justify-content: space-around;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            margin: auto;
+            gap: 10px;
+            /* border: 1px solid red; */
+            margin-top: -2%;
+            margin-bottom: 5%;
+   
+        } 
+
+        #companyDiv img {
+            margin-left: 2%;
+            margin-top: 5%;
+        }
+
+
+        /* ---------------------end---------------- */
+        h1{
+            font-size: 60px;
+
+        }
+
+        h3{
+        font-size: 22px;
+        }
+        .pin{
+            color:#e40084 ;
+        }
+        #psp{
+            width: 90%;
+            height: 1400px;
+            /* border: 1px solid red; */
+            background-color: #161616;
+            margin: auto;
+        }
+
+     
+        /* ------------------------------ */
+        #com{
+            width: 90%;
+            height: 600px;
+            /* border: 1px solide red ; */
+            margin: auto;
+        }
+
+        #com>img{
+            width: 90%;
+            margin: auto;
+        }
+        #mazer{
+            width: 90%;
+            height: 50px;
+            /* border: 1px solid blue; */
+            display: flex;
+            margin: auto;
+
+        }
+        #mazer>div>h1{
+            font-size: 40px;
+            margin-left: 4%;
+        }
+        #last{
+            width: 90%;
+            height: 2400px;
+            /* border:  1px solid green; */
+            background-color: #161616;
+            margin: auto;
+        }
+        #last>img{
+            width: 100%;
+        }
+
+        #btnh{
+            width: 90%;
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: space-between;
+            background-color: black;
+            margin: auto;
+
+        }
+        #btnh > div{
+            /* border:  1px solid green; */
+            width: 50%;
+
+        }
+     
+
+        /* -------------------------footer----------------------- */
+
+
+        #last-box{
+            display: grid;
+            width: 100%;
+            height:1200px;
+            gap:30px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,550px);
+            /* border:1px solid teal ; */
+            margin:auto;
+            /* margin-top: 20px; */
+            background-color: #181818;
+        }
+        #last-box>div{
+            /* border:1px solid red; */
+            background-color: #222222;
+            margin: 20px;
+        }
+        .last-sec{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            height:400px
+            /* border:1px solid red; */
+
+            
+
+        }
+        .last-sec>div{
+            /* border:1px solid yellow; */
+            padding-top: 20px;
+            padding-left: 50px;
+            /* padding-right: 20px; */
+            background-color: #222222;
+            /* background-color: #363636; */
+        }
+        
+        #im{
+            width:100%;
+            height: auto;
+        }
+        p{
+            font-size: 15px;
+            color: #95a0a6;
+            font-weight: bolder;
+        }
+        h4{
+            color: #ec067b;
+            font-weight: bolder;
+        }
+        h3{
+            color: white;
+            font-weight: bolder;
+        }
+        h6{
+            color:white;
+            font-size: 15px;
+            width: 90%;
+        }
+        
+        h5 {
+            cursor: pointer;
+            color:#95a0a6;
+        }
+        h1{
+            color:white;
+        }
+        #symbol{
+            width: 100%;
+            height:200px;
+            background-color: white;
+            border: #ec067b;
+            /* padding-left: 30px; */
+            background-color: #222222;
+        }
+        hr{
+            width:95%;
+            border: 0.01px solid #95a0a6;
+            
+        }
+        .icon{
+            color: white;
+            padding-left: 30px;
+            font-size: 20px;
+        }
+        
+
+
+</style>
+</head>
+<body>
+
+    <!-- ------------------------nav bar start --------------------- -->
+
+    <div id="navFullscreen">
+        <div id="navContainer">
+            
+            <div id="leftContainer">
+                <div ><img style="margin-top:-7.5px;" id="imgPluralSight"  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-60x60.png" alt="">
+                              </div>
+                              <a id="pluralsight" href="index.html"> PLURALSIGHT</a> 
+                <div><a href="platform.html">Platform <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="products.html">Products <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="index1.html">Resources <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+               <div><a href="individual.html">For Individuals <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+            </div>
+            <div id="rightContainer">
+               <div style="font-size: 20px;padding-top:7px;"><i class="fa-solid fa-magnifying-glass"></i></div>
+               <div><a href="signin.html"><button id="signIn" >Sign in <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button></a></div>
+              
+               <a href=""><button id="trybutton">Try For Free</button></a>
+    
+            </div>
+        </div>
+          </div>    
+
+
+   <!-- ------------------------------nav bar end here ---------------------- -->
+
+    <div class="parent">
+        <div id="container1">
+            <div>
+                <div>
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png" alt="">
+                    <div>
+                        <h5>FOR INDIVIDUALS</h5>
+                    </div>
+                </div>
+            </div>
+            <h1>For Individuals: Build better <br> skills</h1>
+            <p>With the technology skills platform, you can see where your skills stand <br> and master the latest in software development, IT ops, AI and machine <br> learning, security and more.</p>
+            <button class="btnn">TRY FOR FREE</button>
+        </div>
+        <div id="container2">
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/individual/hero-individual-illustration.png" alt="">
+        </div>
+    </div>
+    <div style="margin: auto; width: 90%; height: 65px; background-image: linear-gradient(to right,#F05A28,#EC008C, #F05A28); background-color: #ef3d4a;">
+        <h2 style=" text-align: center; " >Serious skills. Simple pricing. See plans ></h2>
+    </div>
+    <div style="width: 90%; margin: auto;">
+        <h2>Trending on Pluralsight</h2>
+    </div>
+   
+        <div id="pvid">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGKhxUI2sY7_wUMlusPvKlefH6hcClJ7Te0IM1nyd__dZYt-76o96iNlY7boDsZhJ7oJhGmZXwNMkMwi8L_lFQlTQ4NoR0aMiGi6jn4PJWyVjWf92TgagrqZ-DrBPXLx1ZzzrxQU1ftaw0ZlouJp_CR6LE-F9lVJpu1-oUVZeOvXdJbjHyweW80z_R/s16000/Capture.JPG" alt="">
+        </div>
+   <div id="vmc">
+  <h3>View more courses >></h3>
+   </div>
+   <div id="otc">
+   <div id="imgc" >
+       <div>
+     <img src="https://www.pluralsight.com/content/pluralsight/en/product/skills/individuals/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block_copy_c/parsys/image/image-res.img.546f1916-9c81-45cc-b79d-533377bcc549.png" alt="">
+       </div>
+       <div style="margin-right: 20%; margin-top: -2%;">
+           <h3 style="color:#e40084;">OVERVIEW</h3>
+           <h1 style="font-size: 40px;margin-top: -5%;">Take control of your career</h1>
+           <h3 style="margin-top: -5% ;">Whether you want to transition into a new field, improve in your role or bring your big ideas to life, <br> Pluralsight Skills can help you get there. With our technology skills platform, you can build in- <br> demand skills and apply them in the real world with confidence.</h3>
+       </div>
+    </div>
+
+
+    <h2 style="text-align: center; color: #aaaaaa;">TRUSTED BY LEARNERS AT THOUSANDS OF COMPANIES</h2>
+
+    <!-- ------------------add more ---------- -->
+
+
+
+    <div id="companyDiv">
+        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/adp.png" alt="">
+        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/adobe.png" alt="">
+        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/vmware.png" alt="">
+        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/fujitsu.png" alt="">
+        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/nasdaq.png" alt="">
+
+    </div>
+
+
+<!-- -------------------- end ------------------------ -->
+
+
+    <div id="imgc1">
+        <div>
+            <h3 class="pin">COURSE LIBRARY</h3>
+            <h1>Learn from top technologists around the world</h1>
+            <h3>Keep your skills up-to-date with access to thousands of courses authored by an <br> elite network of industry experts and patners.</h3>
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/individual/illustration-course-library.png"  alt="">
+        </div>
+    </div>
+    <div id="imgc2">
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/individual/illustration-assessments.png" alt="">
+        </div>
+        <div>
+            <h3 class="pin">SKILL ASSESSMENTS</h3>
+            <h1>See where your skills stand and where you can grow</h1>
+            <h3>The best way to start learning is to see where your skills stand first. Take a quick <br> skill assessment to uncover your strengths and weaknesses and get personalized <br> recommendations on what to work on.</h3>
+        </div>
+    </div>
+    <div id="imgc3">
+        <div>
+            <h3 class="pin">HANDS-ON LEARNING</h3>
+            <h1>Practice applying new skills</h1>
+            <h3>With projects and interactive courses, you can test drive new skills in a risk-free <br> environment and get guided feedback—so you can make mistakes before they <br> matter.</h3>
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/individual/illustration-hands-on-learning.png" alt="">
+        </div>
+    </div>
+   </div>
+       <div id="imgc4">
+       <div>
+         <h3 class="pin" >CUSTOMER STORIES</h3>
+         <h1>From soldier to IT specialist: <br> Ryan's Pluralsight story</h1>
+         <h3>Technology skills change lives. Hear veteran-turned-IT professional <br> Ryan Chasteauneuf's Pluralsight story.</h3>
+         <a href="Watch Ryan's story"></a>  
+       </div>
+       <div>
+        <img src="https://www.pluralsight.com/content/dam/pluralsight2/individual/cs-ryan.png" alt="">
+    </div>
+    </div>
+
+
+
+    <div id="psp">
+     
+    <div style="text-align: center; margin-top: 6%; height: 150px;">
+        <h3 class="pin" style="margin-bottom: -3%;" >PLANS & PRICING</h3>
+        <h1>Build skills that deliver results</h1>
+    </div>
+        
+    <div id="com" >
+        <a href="payment.html"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRs_stfNbiap-ax45h0cmqyDx_Hw5YcPQIxr3NC29PkiFbIkW5I-wpoSyZ3GhDWmIUZ4oXTXrTM5OX785jkXQrcHuTZ7qPfIuoO9EJTFHsEwsT1OSlstdDazKO-pzBT_VBfXzt82nmo4UeLXXQ3M5kx2l_0PPQdVxG6jt5ydwKf6WIp43KJLIJ1onm/s16000/Capture%202.JPG" alt="">
+        </a>
+    </div>
+      <h1 style="font-size: 50px; text-align: center;">Compare our course libraries</h1>
+    <div id="mazer">
+            <div>
+                <h1>Core library</h1>
+                <h3>Our core library features 2,500+ of our most-popular courses on in-demand topics like cloud, data, security, software development, infrastructure and more.</h3>
+            </div>
+            <div>
+                <h1>Expanded library</h1>
+                <h3>Our expanded library gives you access to our full 7,000+ course library. It includes more advanced topics if you need to build deep expertise and niche topics for those tackling special projects.</h3>
+            </div>
+    </div>
+    </div>
+
+    <div id="last">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaH1it4cZoNXLPk5YVJPVEHPWO3y8FApSVmE4CZefooGfZlO2D8ZJ0YA6i_hMenJuPoLWDioFsMfFj1vT3kT121sOBzExdI14-oAkR9CCfLqaz0RdGIQNJh1qN4hqZ4XzPgrZSWcwzomHlJjWqayn9Cy_pHz-ii81m80_X_oV7gtW0D0dq9AhV0_TE/s16000/Web%20capture_1-4-2022_171954_www.pluralsight.com.jpeg" alt="">
+    </div>
+
+    <div id="btnh">
+    <div>
+   <h1>Success starts here
+</h1>
+    </div>
+    <div style=" text-align: end; margin-top: 3%;">
+        <button class="btnn">TRY FOR FREE</button>
+    </div>
+    
+    </div>
+
+
+          <!-- --------------------- footer------------------------ -->
+
+          <div class="last-sec">
+            <div>
+                <h6>SOLUTIONS</h6>
+                <br>
+                <h5>Pluralsight Skills</h5>
+                <h5>Pluralsight Flow</h5>
+                <h5>Government</h5>
+                <h5>Gift of Pluralsight</h5>
+                <h5>View Pricing</h5>
+                <h5>Contact Sales</h5>
+                <h5>Skill up for free</h5>
+            </div>
+            <div>
+                <h6>PLATFORM</h6>
+                <br>
+                <h5>Role IQ</h5>
+                <h5>Skill IQ</h5>
+                <h5>Iris</h5>
+                <h5>Authors</h5>
+                <h5>Professional Services</h5>
+                <h5></h5>
+            </div>
+            <div>
+                <h6>COMPANY</h6>
+                <br>
+                <h5>About us</h5>
+                <h5>Customer stories</h5>
+                <h5>Careers</h5>
+                <h5>Blog</h5>
+                <h5>Newsroom</h5>
+                <h5>Resource center</h5>
+                <h5>Guides</h5>
+            </div>
+            <div>
+                <h6>RESOURCES
+</h6>
+                <br>
+                <h5>Download Pluralsight</h5>
+                <h5>Events</h5>
+                <h5>Teach</h5>
+                <h5>Partners</h5>
+                <h5>Affiliate Partners</h5>
+                <h5>PluralsightOne.org</h5>
+                <h5>Subscribe</h5>
+            </div>
+            <div>
+                <h6>SUPPORT</h6>
+                <br>
+                <h5>Contact</h5>
+                <h5>Help center</h5>
+                <h5>IP allowlist</h5>
+                <h5>Sitemap</h5>
+                <h5></h5>
+                <h5></h5>
+                
+            </div>
+            
+        </div>
+        <div id="symbol" >
+            <br>
+            <hr>
+            <h5><i class="fa-solid fa-globe icon"></i> &emsp; Deutsch &emsp;English &emsp;French</h5>
+            <hr>
+            <h5><img style="height: 30px;margin-left: 20px; margin-top: 20px;"  src="https://www.pluralsight.com/content/dam/pluralsight2/general/icons/light/ps-icon.png"/>
+                &emsp; Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Term of use &emsp;
+                Privacy Notice &emsp; Modern Slavery Act Transparency Statement  &emsp; <i class="fa-brands fa-facebook-f"></i>
+                &emsp;<i class="fa-brands fa-instagram-square"></i>&emsp;<i class="fa-brands fa-twitter"></i> &emsp;<i class="fa-brands fa-linkedin-in"></i>
+                &emsp; <i class="fa-brands fa-youtube"></i>
+    
+            </h5>
+    
+        </div>
+    
+
+    
+</body>
+</html>
