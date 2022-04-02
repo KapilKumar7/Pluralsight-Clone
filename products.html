@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>products</title>
-    <link rel="stylesheet" href="productsPopUp.css">
+    <link rel="stylesheet" href="index.css">
     <style>
         .pop{
-            width: 635px;
+            width: 690px;
             height: 232px;
             /* border: 1px solid blue; */
             display: flex;
@@ -16,9 +16,17 @@
             align-items: center;
             background-color: #222222;
             margin: auto;
-            margin-top: 10em;
+            margin-left: 29em;
             
 
+        }
+        .Background_img{
+            width: 100%;
+            height: 640px;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 7em;
+            background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKUGVWUBrw1uNJYeYs0wtoH_7OceEvbOqrm3fdH8uwih_3Z8JFbcXa1OeINIcp4OUlISFwnuY8qFISsIXMgtGWKJta561Gt3l4kElDToXTUz6h3ISnwiqlL2GjbOmME8Si1ldtjiYtKFkJbTbiougq3MJ0rFgimzEeJX2sZ26RMMRr9mFinKAEULyu/s1600/products%20background.png);
         }
         .pop1{
             width: 277px;
@@ -59,7 +67,7 @@
         .h3_pop1{
             color: white;
             margin-left: 25px;
-           margin-top: -55px;
+           margin-top: 12px;
         }
         .h3_pop2{
             color: white;
@@ -70,23 +78,24 @@
 </head>
 <body>
 
-     <!-- Nav bar html----------------------------------------------------- -->
-     <div id="navFullscreen">
+    <!-- Nav bar html----------------------------------------------------- -->
+    <div id="navFullscreen">
         <div id="navContainer">
             
             <div id="leftContainer">
                 <div ><img style="margin-top:-7.5px;" id="imgPluralSight"  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-60x60.png" alt="">
                               </div>
                               <a id="pluralsight" href="index.html"> PLURALSIGHT</a> 
-                <div><a href="">Platform <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
-                <div><a href="">Products <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
-                <div><a href="">Resources <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="platform.html">Platform <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="products.html">Products <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="index1.html">Resources <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
                <div><a href="">For Individuals <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
             </div>
             <div id="rightContainer">
                <div style="font-size: 20px;padding-top:7px;"><i class="fa-solid fa-magnifying-glass"></i></div>
-               <div><button id="signIn" >Sign in <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button></div>
-              <a href=""><button id="trybutton">Try For Free</button></a> 
+               <div><a href="signin.html"><button id="signIn" >Sign in <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button></a></div>
+              
+               <a href=""><button id="trybutton">Try For Free</button></a>
     
             </div>
         </div>
@@ -94,25 +103,28 @@
  <!--Navbar code ends here--------------------------------------------  -->
 
         <!-- background image div -->
-
-
-
-    <div class="pop">
-        <div class="pop1">
-            <img class="img_pop" src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Skill_logo_white.png" alt="">
-            <p class="p_pop">Build tech skills to drive results</p>
-            <div class="horizontal"></div>
-            <h3 class="h3_pop">What is Skills?</h3>
-            <h3 class="h3_pop">View plans</h3>
+        <div class="Background_img">
+            <div class="pop">
+                <div class="pop1">
+                    <a href="skills.html" target="/blank"><img class="img_pop" src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Skill_logo_white.png" alt=""></a>
+                    <p class="p_pop">Build tech skills to drive results</p>
+                    <div class="horizontal"></div>
+                    <h3 class="h3_pop">What is Skills?</h3>
+                    <h3 class="h3_pop">View plans</h3>
+                </div>
+                <div class="pop1">
+                   <a href="flow.html" target="/blank"><img class="img_pop" src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Flow_Logo_white.png" alt=""></a> 
+                    <p class="p_pop">Get insights into your workflow</p>
+                    <div class="horizontal"></div>
+                    <div class="vl"></div>
+                    <h3 class="h3_pop1">What is Flow?</h3>
+                    <h3 class="h3_pop2">View plans</h3>
+                </div>
+            </div>
         </div>
-        <div class="pop1">
-            <img class="img_pop" src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Flow_Logo_white.png" alt="">
-            <p class="p_pop">Get insights into your workflow</p>
-            <div class="horizontal"></div>
-            <div class="vl"></div>
-            <h3 class="h3_pop1">What is Flow?</h3>
-            <h3 class="h3_pop2">View plans</h3>
-        </div>
-    </div>
+
+
+
+   
 </body>
 </html>
