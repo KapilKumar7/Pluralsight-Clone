@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="index.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+
+
+    <style>
+         body{
+            background-color:black;
+            color: white;
+        
+         }
+
+       .box1{
+           /* border: 1px solid red; */
+           height:350px;
+           width:100%;
+           background-image:  url("https://www.pluralsight.com/content/dam/pluralsight2/browse/backgrounds/bg-hero.png");
+           background-color: black;
+           color: white;
+           margin-top: 10em;
+       }
+       h1{
+           text-align: center;
+           font-size: 48px;
+       }
+       #inner{
+           /* border: 1px solid red; */
+           height:100px;
+           width:50%;
+           font-size: 25px;
+           margin:auto;
+           text-align: center;
+           padding-top: 20px;
+       }
+       .box2{
+           height:150px;
+           width:100%;
+           /* border:1px solid red; */
+           display:flex;
+           justify-content: space-between;
+           background-color:black ;
+         
+           padding-top: 100px;
+
+       }
+       #navigation{
+           height:60px;
+           width:80%;
+           border:1px solid black;
+           display:flex;
+           background-color: #181818;
+           color:white;
+           margin-left: 55px;
+           justify-content: space-between;
+
+       }
+       #sort{
+              height:40px;
+              width:10%;
+             
+              background-color:black;
+              color: white;
+              margin-right: 60px;
+              text-align: center;
+              font-size: 20px;
+              padding-top: 15px;
+             border-style: solid;
+             border-color: white;
+             
+            
+             
+       }
+       #s{
+           cursor: pointer;
+           height: 20px;
+           width: 20px;
+           padding-top:10px ;
+           padding-bottom: 20px;
+           color: white;
+           background-color: black;
+           border: none;
+       }
+       #s:hover{
+           color: purple;
+       }
+       #cross{
+           display: flex;
+           justify-content: space-between;
+           height:55px;
+           width: 15%;
+           text-align: center;
+           padding-top: 5px;
+           /* background-color: blue; */
+       }
+       #search{
+           font-size: 22px;
+           padding-left: 30px;
+           /* padding-top: 20px; */
+           border: none;
+           padding-top: 10px;
+           color:white;
+           background-color: #181818;
+       }
+       .close-button{
+           height:50px;
+           width:60px;
+           font-weight: bold;
+           background-color: #181818;
+           color:white;
+           cursor: pointer;
+          font-size: 30px;
+          border: none;
+       }
+       #vl{
+        border: 0.5px solid gray;
+       }
+       hr{
+        border:0.5px solid gray;
+       }
+       #icon{
+           padding-right: 20px;
+           padding-top: 20px;
+           color:white
+       }
+       h3{
+           display: flex;
+           justify-content: space-between;
+           padding-right: 10px;
+         
+         
+       }
+      
+     
+       .main{
+           height:3100px;
+           width:100%;
+           /* border:1px solid red; */
+           display: flex;
+           background-color: black;
+           
+          
+       }
+       .left{
+           /* border: 1px solid blue; */
+           height:3000px;
+           width: 25%;
+           font-size: 20px;
+           line-height: 40px;
+           padding-left:30px ;
+           color: white;
+           background-color: black;
+       }
+       .right{
+           margin-left: 90px;
+           /* border: 1px solid purple; */
+           height:3000px;
+           width: 70%;
+           display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(18,150px);
+        gap: 20px;
+        background-color: black;
+        color:white;
+        cursor: pointer;
+       }
+       label{
+           cursor: pointer;
+       }
+    .advanced{
+        cursor: pointer;
+        font-size: 25px;
+    }
+  
+    .right>div{
+        
+        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        line-height:5px;
+    }
+    .expanded{
+        display: flex;
+        justify-content: space-between;
+        height:50px;
+        width:40%;
+      
+        padding-top: 10px;
+    }
+    button{
+       
+        background-color:#1E90FF;
+        color: white;
+        font-size: 10px;
+        height: 20px;
+        width: 70px; 
+        border-radius: 5px;
+        cursor: pointer;
+      
+    }
+    .checked{
+        color: orange;
+    }
+    .lower-box{
+      height:400px;
+      width: 100%;
+    
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+    }
+    .lower-box>div{
+      
+        line-height: 30px;
+        padding-left: 30px;
+        cursor: pointer;
+      
+    }
+   .fa-solid {
+       height: 10px;
+       width: 10px;
+   }
+      
+      
+    </style>
+</head>
+<body>
+<!-- Nav bar html----------------------------------------------------- -->
+<div id="navFullscreen">
+    <div id="navContainer">
+        
+        <div id="leftContainer">
+            <div ><img style="margin-top:-7.5px;" id="imgPluralSight"  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-60x60.png" alt="">
+                          </div>
+                          <a id="pluralsight" href="index.html"> PLURALSIGHT</a> 
+            <div><a href="platform.html">Platform <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+            <div><a href="products.html">Products <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+            <div><a href="index1.html">Resources <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+           <div><a href="">For Individuals <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+        </div>
+        <div id="rightContainer">
+           <div style="font-size: 20px;padding-top:7px;"><i class="fa-solid fa-magnifying-glass"></i></div>
+           <div><a href="signin.html"><button id="signIn" >Sign in <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button></a></div>
+          
+           <a href=""><button id="trybutton">Try For Free</button></a>
+
+        </div>
+    </div>
+      </div>    
+<!--Navbar code ends here--------------------------------------------  -->
+
+
+   
+    <!-- first div -->
+   <div class="box1">
+       <div id="inner">
+           <p><img src ="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png"/></p>
+           <h1>Thousands of courses authored by our network of industry experts</h1>
+        </div>
+   </div>
+   <!-- second div -->
+  <div class="box2">
+      <div id="navigation">
+          <div id="search">
+          <input id="search" type="text" placeholder="search" />
+          </div>
+          <div id="cross">
+             
+             <button  class="close-button">&times;</button>
+              <div id="vl"></div>
+              <div id="icon"><span><i class="fa-solid fa-magnifying-glass"></i></span></div>
+          </div>
+      </div>
+      <div id="sort">Sort by  
+          <!-- <span><i class="fa-solid fa-angles-down"></i></span> -->
+        <select id="s">
+            <option>Highest rated</option>
+            <option>Newest</option>
+            <option>course A->Z</option>
+            <option>Course z->A</option>
+        </select>
+    </div>
+       
+  </div>
+   <!-- third div -->
+   <div class="main">
+   <div class="left">
+       <!-- 1box -->
+       <h3>ways to learn  &emsp;<span<i class="fa-solid fa-angle-up"></i></span></h3>
+       <hr>
+       <label>
+           <input type="radio" class="Advanced"  name="radio"/>
+           <span>All</span>
+       </label>
+       <br>
+       <label>
+        <input type="radio" class="advanced"  name="radio"/>
+        <span>Core Courses</span>
+    </label>
+    <br>
+   
+    <label>
+        <input type="radio" class="advanced"  name="radio"/>
+        <span>Expanded Courses</span>
+    </label>
+    <br>
+    
+    <label>
+        <input type="radio" class="advanced"  name="radio"/>
+        <span>Labs</span>
+    </label>
+    <!-- 2box -->
+     <h3>Skill Level &emsp;<span<i class="fa-solid fa-angle-up"></i></span> </h3> 
+     <hr>
+     <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Advanced</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Beginner</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Intermediate</span>
+    </label>
+    <!-- 3box -->
+    <h3>Subject  &emsp;<span<i class="fa-solid fa-angle-up"></i></span></h3>
+    <hr>
+   
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Architecture&Construction</span>
+    </label>
+     <br>
+    
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Buisness Professionals</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Creative Professional</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Data Professional</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>IT ops</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Manufacturing & design</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Information & cyber security</span>
+    </label>
+     <br>
+  <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Software development</span>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="advanced"  name="checkbox"/>
+        <span>Web development</span>
+    </label>
+<!-- left ends here -->
+</div>
+   <div class="right">
+       <!-- 18divs -->
+       <div >
+           <h2>Dependency Injection in ASP.NET Core 6</h2>
+           <p>by Steve Gordon</p>
+           <!-- div for button -->
+           <div class="expanded"><button>EXPANDED</button>
+            <p>2h 42m   <span><i class="fa-solid fa-clock"></i> </span></p>
+            <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+            <p ><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+        </div>
+        <hr>
+        </div>
+          <!-- dependecy div end -->
+        <div>
+            <h2>C# 10 fundamentals</h2>
+            <p>by Gill cleeren</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>8h 44m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Beginner  <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr> 
+        </div>
+        <div>
+            <h2>WPF 6 fundamentals</h2>
+            <p>by Thomas Claudius Huber</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>6h 9m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Beginner <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         
+         <hr>
+        </div>
+        <div>
+             <h2>ASP.NET core 6:Big Picture</h2>
+            <p>by Roland Guijt</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>1h 35m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Beginner <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Ethical Hacking:Malware Threats</h2>
+            <p>by Dale Meredith</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>5h  <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Ethical Hacking: Reconnaissance/footprinting</h2>
+            <p>by Dale Meredith</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>4h 8m  <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Beginner <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Code Review:Best Practices</h2>
+            <p>by Andrejs Doronins</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>1h 22m   <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Beginner <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Getting Started with Model-driven Apps in Power Apps(PL-100)</h2>
+            <p>by Amber Israelson</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>2h 2m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Identify Common Cyber Network Attacks with Wireshark</h2>
+            <p>by Chris Greer</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>2h 34m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Automated Web Testing In Java with Playwright</h2>
+            <p>by Andrejs Doronins</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>3h 21m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Wireshark Configuration for Cyber Security Analysis</h2>
+            <p>by Chris Greer</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>1h 28m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Change Management:Evaluation Impact and Organizational Readiness</h2>
+            <p>by Kevin Miller</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>2h <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Using Operators ,Decisions,and Looping Constructs(Java SE 8 Programmer|Certification 1Zo-808</h2>
+            <p>by Andrejs Doronins</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>1h 27m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Using HttpClient to Consume APIs in .NET</h2>
+            <p>by Kevin Dockx</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>3h 26m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>What's New in Java 16</h2>
+            <p>by Sander Mak</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>1h 25m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>Impact With Slowloris</h2>
+            <p>by Pinal Dave</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p> 21m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+
+        </div>
+        <div>
+            <h2>Developind Python Apps with Docker</h2>
+            <p>by Steven Haines</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>2h 28m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+        </div>
+        <div>
+            <h2>FluentValidation Fundamentals</h2>
+            <p>by Valdimir Khorikov</p>
+            <!-- div for button -->
+            <div class="expanded"><button>EXPANDED</button>
+             <p>3h 48m <span><i class="fa-solid fa-clock"></i> </span></p>
+             <p>Intermediate <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"/></p>
+             <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         </div>
+         <hr>
+            <p style="font-size:30px;text-align:center"><span><i class="fa-solid fa-circle-chevron-right"></i></span><p>
+        </div>
+    
+   </div>
+  
+   </div>
+  
+   <!-- lower portion -->
+   <div class="lower">
+             <hr>
+       <div class="lower-box">
+           <div>
+               <!-- <h3>Browse by link</h3> -->
+               
+                <p>Software Developement</p>
+                <ul type="disc">
+                    <li>Web Developement</li>
+                    <li>Mobile Developement</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>Nodejs</li>
+                    <li>view more <span><i class="fa-solid fa-greater-than fa-2xs"></i></span></li>
+                </ul>  
+                <p>Data Professionals</p> 
+                <p>Architecture & Construction</p>       
+            </div>
+           <div>
+               <p>IT Ops</p>
+               <ul type="disc">
+                   <li>IT Certifications</li>
+                   <li>Security</li>
+                   <li>Database Administration</li>
+                   <li>virtualization</li>
+                   <li>IT Network</li>
+                   <li>Servers</li>
+                   <li>view more <span><i class="fa-solid fa-greater-than fa-2xs"></i></span></li>
+               </ul>
+               <p>Buisness Professionals</p>
+               <p>Manufacturing & Designs</p>
+           </div>
+           <div>
+               <p>Information & Security</p>
+               <ul type="disc">
+                   <li>Security Certifications</li>
+                   <li>Security Fundamentals</li>
+                   <li>Security Auditing</li>
+                   <li>Pentration Testing</li>
+                   <li>Digital Forensic</li>
+                   <li>Malware Analysis</li>
+                   <li>view more  <span><i class="fa-solid fa-greater-than fa-2xs"></i></span></li>
+               </ul>
+               <p>Creative Professionals</p>
+           </div>
+       </div>
+   </div>
+   <!-- FOOTER------------------------------------- -->
+
+<div id="footer">
+    <div class="last-sec">
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+        </div>
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+        </div>
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+        </div>
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+        </div>
+        <div>
+            <h6>SUPPORT</h6>
+            <br>
+            <h5>Pluralsight Skills</h5>
+            <h5>Pluralsight Flow</h5>
+            <h5>Government</h5>
+            <h5>Gift of Pluralsight</h5>
+            <h5>View Pricing</h5>
+            <h5>Contact Sales</h5>
+            
+        </div>
+        
+    </div>
+    <div id="symbol" >
+        <br>
+        <hr>
+        <h5><i class="fa-solid fa-globe icon"></i> &emsp; Deutsch &emsp;English &emsp;French</h5>
+        <hr>
+        <h5><img style="height: 30px;margin-left: 20px; margin-top: 20px;"  src="https://www.pluralsight.com/content/dam/pluralsight2/general/icons/light/ps-icon.png"/>
+            &emsp; Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Term of use &emsp;
+            Privacy Notice &emsp; Modern Slavery Act Transparency Statement  &emsp; <i class="fa-brands fa-facebook-f"></i>
+            &emsp;<i class="fa-brands fa-instagram-square"></i>&emsp;<i class="fa-brands fa-twitter"></i> &emsp;<i class="fa-brands fa-linkedin-in"></i>
+            &emsp; <i class="fa-brands fa-youtube"></i>
+    
+        </h5>
+    
+    </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------- -->
+        
+</body>
+</html>
