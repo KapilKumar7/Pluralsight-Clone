@@ -512,8 +512,9 @@ margin-top: 100px;
 width: 1498px;
 /* height: 258px;  */
 background-color: #181818;
-padding: 100px 0px;
-
+padding: 150px 0px;
+ 
+ margin-bottom: 100px ;
 
 }
 
@@ -533,6 +534,7 @@ border-radius: 2px;
     transition-duration: 0.6s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+    
 
 
 }
@@ -540,3 +542,54 @@ border-radius: 2px;
     margin-left: 15px;
 
 }
+
+/* /------------------FOOTER CSS---------------------------------------- */
+.last-sec{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    height:400px;
+    width:1399px;
+    /* height: 427; */
+    /* border:1px solid red; */
+    margin: auto;
+
+    
+
+}
+.last-sec>div{
+    /* border:1px solid yellow; */
+    padding-top: 20px;
+    padding-left: 50px;
+    /* padding-right: 20px; */
+    background-color: #222222;
+    /* background-color: #363636; */
+}
+.last-sec h6{
+    color:white;
+    font-size: 15px;
+}
+
+.last-sec h5 {
+    cursor: pointer;
+    color:#95a0a6;
+}
+#symbol{
+    /* width: 100%; */
+    height:200px;
+    background-color: white;
+    border: #ec067b;
+    /* padding-left: 30px; */
+    background-color: #222222;
+    width:1300px;
+   margin: auto;
+   padding-left: 30px;
+   padding-right: 30px;
+   
+
+}
+#footer {
+    background-color: #212121;
+    width: 100%;
+}
+
+/* ------------------------------------Footer---------------------------------------------- */
