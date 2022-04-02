@@ -1,0 +1,126 @@
+/* NavBar code--------------------------------------------------------------------------- */
+
+#navFullscreen {
+    background-color: #212121;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    /* position: relative; */
+    text-decoration: none;
+    padding: 20px 18px 10px 18px;
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    margin-top: -10.7em;
+
+    
+   
+
+}
+button{
+cursor: pointer;
+}
+
+    
+  
+  #navFullscreen a{
+      text-decoration: none;
+
+      color: white;
+  }
+  #leftContainer img{
+      border-radius: 200px;
+
+  }
+  #pluralsight {
+      margin-top: 14px;
+      font-size: larger;
+      margin-left: -10px;
+      color: #ffffff;
+  }
+
+      
+
+    #navContainer{
+    display: flex;
+    text-decoration: none;
+    width: 1250px;
+    height: 87px;
+    margin: auto;
+    /* border: 5px solid rebeccapurple; */
+    justify-content: space-between;
+    /* padding: 10px; */
+    font-weight: 700;
+    font-size: 15PX;
+    /* gap: 20px; */
+    
+    
+
+    
+}
+   #trybutton {
+    /* padding: 12px 24px ; */
+    background-color: transparent;    
+    border: 1.3px solid #ffffff;
+    width: 147px;
+    height: 40px;
+    color: white;
+    font-size: 13px; 
+    font-weight: 14.3px;
+    margin-left: 1px;
+    
+}
+#signIn {
+    background-color: transparent;    
+    border: 1.3px solid #ffffff;
+    width: 100px;
+    height: 40px;
+    color: white;
+    /* font-size: 13px;  */
+    font-weight: 14.3px;
+    border: 0px;
+    margin-left: -20px;
+    
+
+
+}
+#leftContainer{
+    /* border:1px solid blue; */
+display: flex;
+gap: 20px;
+/* padding-top: 20px; */
+justify-content: left;
+height: 87px;
+width: 760px;
+
+
+}
+#rightContainer{
+    display: flex;
+    /* padding: 20px; */
+    width: 302px;
+    height: auto;          
+    gap: 20px;
+    /* border:3px solid rgb(22, 219, 81);   */
+
+}
+
+
+#leftContainer div{
+    /* margin-left: 3%; */
+    margin-left: 5px;
+    margin-top: 12px;
+    /* font-size: 20px;     */
+    /* border:1px solid blue; */
+    height: 40px; 
+    width: auto;
+    height: 100%;   
+
+}
+#imgPluralSight {
+    height: 35px;
+    /* border: 2px solid green; */
+    
+}
+/* Navbar CSS END HERE---------------------------------------------------------------------------------- */
