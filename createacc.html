@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this is navbar code */
+        #navFullscreen {
+            background-color: #212121;
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+            display: block;
+            /* position: relative; */
+            text-decoration: none;
+            padding: 20px 18px 10px 18px;
+            width: 96.3%;
+            position: fixed;
+            height: 70px;
+            margin: auto;
+            margin-top: -20px;
+
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+
+
+        #navFullscreen a {
+            text-decoration: none;
+
+            color: white;
+
+        }
+
+        #leftContainer img {
+            border-radius: 200px;
+
+        }
+
+        #pluralsight {
+            margin-top: 14px;
+            font-size: larger;
+            margin-left: -10px;
+            color: #ffffff;
+        }
+
+
+
+        #navContainer {
+            display: flex;
+            text-decoration: none;
+            width: 1250px;
+            height: 87px;
+            margin: auto;
+            /* border: 5px solid rebeccapurple; */
+            justify-content: space-between;
+            /* padding: 10px; */
+            font-weight: 700;
+            font-size: 15PX;
+            /* gap: 20px; */
+
+
+
+
+        }
+
+        #trybutton {
+            /* padding: 12px 24px ; */
+            background-color: transparent;
+            border: 1.3px solid #ffffff;
+            width: 147px;
+            height: 40px;
+            color: white;
+            font-size: 13px;
+            font-weight: 14.3px;
+            margin-left: 1px;
+
+        }
+
+        #signIn {
+            background-color: transparent;
+            border: 1.3px solid #ffffff;
+            width: 100px;
+            height: 40px;
+            color: white;
+            /* font-size: 13px;  */
+            font-weight: 14.3px;
+            border: 0px;
+            margin-left: -20px;
+
+
+
+        }
+
+        #leftContainer {
+            /* border:1px solid blue; */
+            display: flex;
+            gap: 20px;
+            /* padding-top: 20px; */
+            justify-content: left;
+            height: 87px;
+            width: 760px;
+
+
+        }
+
+        #rightContainer {
+            display: flex;
+            /* padding: 20px; */
+            width: 302px;
+            height: auto;
+            gap: 20px;
+            /* border:3px solid rgb(22, 219, 81);   */
+
+        }
+
+
+        #leftContainer div {
+            /* margin-left: 3%; */
+            margin-left: 5px;
+            margin-top: 15px;
+            /* font-size: 20px;     */
+            /* border:1px solid blue; */
+            height: 40px;
+            width: auto;
+            height: 100%;
+
+        }
+
+        #imgPluralSight {
+            height: 35px;
+            /* border: 2px solid green; */
+
+        }
+
+        /*  this is create account code */
+        #container3 {
+            display: flex;
+            /* border: red solid 1px; */
+            width: 26%;
+            height: 700px;
+            padding-left: 200px;
+            background-color: #FFD727;
+
+        }
+
+        #terms {
+            display: inline;
+            font-size: 12px;
+        }
+
+        #create {
+            width: 180px;
+            color: white;
+            background-color: #006395;
+
+        }
+
+        #already {
+            display: inline;
+            margin-left: 15px;
+            font-size: 15px;
+        }
+
+        #h5signin {
+            padding-left: 72px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        #imgbuild {
+            width: 409%;
+            height: 700px;
+            margin-left: 175px;
+            margin-top: 0px;
+            /* border: 1px blue solid; */
+        }
+
+        #name,
+        #email,
+        #password,
+        #confirmpassword {
+            width: 200px;
+            height: 18px;
+            border-radius: 3px;
+            border-color: black;
+        }
+
+        #create {
+            width: 205px;
+            height: 23px;
+            border-radius: 3px;
+            border-color: black;
+        }
+
+        #createaccount {
+            margin-left: -60px;
+            margin-top: 130px;
+
+        }
+    </style>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body style="font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
+    <!-- this is navbar code -->
+    <div id="navFullscreen">
+        <div id="navContainer">
+
+            <div id="leftContainer">
+                <div><img style="margin-top:-7.5px;" id="imgPluralSight"
+                        src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-60x60.png"
+                        alt="">
+                </div>
+                <a id="pluralsight" href="index.html"> PLURALSIGHT</a>
+                <div><a href="platform.html">Platform <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="products.html">Products <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="index1.html">Resources <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a></div>
+                <div><a href="individual.html">For Individuals <i style="font-size: small;" class="fa-solid fa-angle-down"></i></a>
+                </div>
+            </div>
+            <div id="rightContainer">
+                <div style="font-size: 20px;padding-top:7px;"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div><a href="signin.html"> <button id="signIn">Sign in <i style="font-size: small;"
+                                class="fa-solid fa-angle-down"></i></button></a></div>
+                <a href=""><button id="trybutton">Try For Free</button></a>
+
+            </div>
+        </div>
+    </div>
+    <!-- this is create account code -->
+
+    <div id="container3">
+
+        <form action="" id="createaccount">
+            <h2>Create Account</h2>
+            <h3>Name</h3>
+            <input type="text" id="name" placeholder="Enter your name">
+            <h3>Email</h3>
+            <input type="email" id="email" placeholder="Enter your email">
+            <h3>Password</h3>
+            <input type="password" id="password" placeholder="enter your password">
+            <h3>Confirm Password</h3>
+            <input type="password" id="confirmpassword" placeholder="confirm your password">
+            <br>
+            <br>
+            <input type="checkbox" name="" id="checkbox">
+            <p id="terms">I Agree the terms and conditions*</p>
+            <br>
+            <br>
+            <button id="create">Create Account</button>
+            <br>
+            <br>
+            <h5 id="already">Already have an Account</h5>
+            <h5 id="h5signin"><a href="signin.html">Sign in</a></h5>
+        </form>
+        <div id="div1"> <img id="imgbuild"
+                src="https://www.pluralsight.com/content/pluralsight/en/about/jcr:content/image-res/file.transform/share-image/image.img.b263c3cb-9355-43bb-bf80-5d7d2efb2a29.jpg"
+                alt=""></div>
+    </div>
+</body>
+
+</html>
+
+<script src="createacc.js">
+
+    
+
+</script>
