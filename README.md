@@ -68,9 +68,9 @@ To deploy this project run
 
 
 ## Lessons Learned
-This was our first project of cloning a whole website. And was such a great experience.
+This was our first project of cloning a whole website. And it was such a great experience.
 We build this project is just 6 days and as a fresher we think its a great acomplishment. 
-first when we saw the website given to us then we all were worried weather we will be able to build it or not but we worked as a team and completed the task.
+first when we saw the website given to us then we all were worried whether we will be able to build it or not but we worked as a team and completed the task.
 
 While building  this projects there were lots of things in html css and javascript we googled and applied it to our project on our own. for example in our homepage there was text animination we did not know how to do it but we searched it and learned it. just like this example we had a great journey and a amazing learning experience while building this project.
 
@@ -95,7 +95,7 @@ If you have any feedback, please reach out to us at Link
 Kapil Kumar : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kapil-kumar-363123208/)
 Shubham : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-choudhary-31b544141)
 Saber: [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saber-patel-616001230/)
-Ayushi: [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-choudhary-31b544141)
+Ayushi: [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayushi-gupta-b98676236/)
 Umesh : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/umesh-talekar-51361822b/)
 Shivani : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](http://linkedin.com/in/shivani-1236b)
 
