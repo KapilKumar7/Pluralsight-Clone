@@ -1,10 +1,8 @@
-
-![Logo](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSEAAr-2QHWRPKFNB56RDLe1TgBu8VAY7wxLVnO1vMJo7KPUNSwvG8gJFpE6wUhDrppdqGnCz-W6l3aBN7X4C11hDBPssCCqpQGvlPcJDYD8Avx-hnv7bz4n-V1gngpy64f9s0zhLk48niZ1p6Gy7kJD7e2nzWZdC8XNsKQ4oq3hz9Fsn8pV7ON9Hp/s16000/logo.png)
-
-
 # Clone of pluralsight.com
 
-At Pluralsight, we believe everyone should have the opportunity to create progress through technology and develop the skills of tomorrow. With assessments, learning paths and courses authored by industry experts, our platform helps businesses and individuals benchmark expertise across roles, speed up release cycles and build reliable, secure products.
+Pluralsight, Inc. is an American privately held online education company that offers a variety of video training courses for software developers, IT administrators, and creative professionals through its website.
+
+![Logo](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSEAAr-2QHWRPKFNB56RDLe1TgBu8VAY7wxLVnO1vMJo7KPUNSwvG8gJFpE6wUhDrppdqGnCz-W6l3aBN7X4C11hDBPssCCqpQGvlPcJDYD8Avx-hnv7bz4n-V1gngpy64f9s0zhLk48niZ1p6Gy7kJD7e2nzWZdC8XNsKQ4oq3hz9Fsn8pV7ON9Hp/s16000/logo.png)
 
 
 ## Demo
