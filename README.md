@@ -9,7 +9,7 @@ Pluralsight, Inc. is an American privately held online education company that of
 
 Here you can have a Look on our site pluralsiteclonechillpill  
 
-https://kapilkumar7.github.io/pluralsightclone/
+https://pluralsightproject.netlify.app/
 
 
 
@@ -51,7 +51,7 @@ Please adhere to this project's `code of conduct`.
 To deploy this project run
 
 ```bash
-  https://kapilkumar7.github.io/pluralsightclone/
+https://pluralsightproject.netlify.app/
 ```
 
 
